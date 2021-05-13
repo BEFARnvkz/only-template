@@ -18,31 +18,32 @@ h1, h2, h3, h4, h5, a {
     margin: 0;
 }
 
-ul, ol, li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+//ul, ol, li {
+    //list-style:none;
+//    padding: 0;
+//    margin: 0;
+//}
 
 p {
     padding: 0;
     margin: 0;
 }
 
-input, button {
-   font-family: inherit;
-    border: none;
-    border-radius: 0;
-    background: inherit;
-    padding: 0;
-    margin: 0;
+// input, button {
+//   font-family: inherit;
+//    border: none;
+//    border-radius: 0;
+//    background: inherit;
+//    padding: 0;
+//    margin: 0;
 
-    &:hover,
-    &:focus,
-    &:active {
-        outline: none;
-    }
-}
+//    &:hover,
+//    &:focus,
+//    &:active {
+//        outline: none;
+//   }
+//}
+
 
 input {
     &::placeholder {

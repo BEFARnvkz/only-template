@@ -12,13 +12,20 @@ requireAll(require.context('../../assets/icons', true, /\.svg$/));
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import Modal from '../../components/modal/modal';
+import Box from '../../components/box/box';
 
 fromEvent(document, 'DOMContentLoaded').subscribe(() => {
   new Header(getComponent('header'));
   new Footer(getComponent('footer'));
 
   if (getComponent('modal').component)
-    getComponents('modal').forEach((component) => new Modal(component));
+     getComponents('modal').forEach((component) => new Modal(component));
+
+  if (getComponent('box').component) getComponents('box').forEach(component => new Box(component));
+
+
+
+
 
   const images = document.querySelectorAll('img');
   objectFitImages(images);

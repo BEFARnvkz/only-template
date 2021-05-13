@@ -1,27 +1,47 @@
 .box {
-   $root: &; //не видит его, почему-то.
+   $root: &;
 
-    &__container{
-        display: flex;
-        &-el{
-            width: 50%;
-            margin: 40px;
-            &:nth-child(1){
-                background-color: red;
-            }
-            &:nth-child(2){
-                background-color: yellow;
-            }
+    &__container {
+      display: flex;
+
+      &-el {
+
+
+        width: 50%;
+        margin: 10px;
+        background-color: $red;
+        &--green {
+          background-color: $green;
+
 
         }
 
+      //  &:nth-child(1) {
+       //   background-color: $red; //костыли для смены цвета, иначе приоритет красному
+       // }
+
+        &:nth-child(2) {
+          background-color: $yellow;
+        }
+
+
+
+
+        &--none {
+          display: none;
+        }
+      }
     }
+
 
     &__footer
         {
             display: flex;
             justify-content: center;
+            margin-top: 40px;
+            &-button{
 
+            }
 
         }
 }
