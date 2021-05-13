@@ -1,3 +1,27 @@
 .box {
-    $root: &;
+   $root: &; //не видит его, почему-то.
+
+    &__container{
+        display: flex;
+        &-el{
+            width: 50%;
+            margin: 40px;
+            &:nth-child(1){
+                background-color: red;
+            }
+            &:nth-child(2){
+                background-color: yellow;
+            }
+
+        }
+
+    }
+
+    &__footer
+        {
+            display: flex;
+            justify-content: center;
+
+
+        }
 }
